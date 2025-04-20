@@ -51,36 +51,39 @@
 
 
     <div class="top-img">
-        <img src="../images/sound_to_solid/poster_mockup.jpg" style="object-position: 40% 20%;">
-        <h1 style="color:white">Sound to Solid</h1>
+        <img src="../images/cards/pigmas.jpg" style="object-position: 40% 28%;">
+        <h1 style="color:black">Cards</h1>
     </div>
 
     <div class="row work-body">
 		<div class="col-md-4">
-		    <h2 style="font-weight: bold;">Sound to Solid</h2>
-			<h3>2021</h3>
-			<p>Discovery through wood burning to show the core meaning of America by America.<br><br>
-			<i style="font-size:18px">Elements: woodburning, illustrator, photoshop, experimentation, promotional</i></p>
+		    <h2 style="font-weight: bold;">Cards</h2>
+			<h3>2023-2025</h3>
+			<p>Hand lettered cards for birthdays and Christmas.<br><br>
+			<i style="font-size:18px">Elements: hand lettering, die cutting, papercrafts, watercolor</i></p>
 			
 		</div>
 
 		<div class="col-md-8 image-box">
 			<a class="lightbox">
-				<img src="../images/sound_to_solid/front_cover.jpg" id="1" alt="" />
+				<img src="../images/cards/carriage.jpg" id="1" alt="" />
 			</a>
 
 			<a class="lightbox">
-				<img src="../images/sound_to_solid/poster_final.jpg" id="2" alt="" />
+				<img src="../images/cards/flower.jpg" id="2" alt="" />
 			</a>
 			
 			<a class="lightbox">
-				<img src="../images/sound_to_solid/back_cover.jpg" id="3" alt="" />
+				<img src="../images/cards/house.jpg" id="3" alt="" />
 			</a>
 			<a class="lightbox">
-				<img src="../images/sound_to_solid/poster_mockup.jpg" id="4" alt="" />
+				<img src="../images/cards/pigmas.jpg" id="4" alt="" />
 			</a>
 			<a class="lightbox">
-				<img src="../images/sound_to_solid/wood.jpg" id="5" alt=""  />
+				<img src="../images/cards/wreath.jpg" id="5" alt=""  />
+			</a>
+			<a class="lightbox">
+				<img src="../images/cards/red.jpg" id="6" alt=""  />
 			</a>
 		</div>
     </div>
@@ -116,47 +119,5 @@
 		  </div>
 		</div>
 	  </div>
-<script>
-
-var imageList = ["../images/sound_to_solid/front_cover.jpg","../images/sound_to_solid/poster_final.jpg","../images/sound_to_solid/back_cover.jpg",
-"../images/sound_to_solid/poster_mockup.jpg","../images/sound_to_solid/wood.jpg"];
-
-// Get the modal
-var modal = document.getElementById("myModal");
-var currImg = -1;
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-
-//$('img').click(function(){
-    //modal.style.display = "block";
-	//modalImg.src = $(this).attr('src');
-	//currImg = parseInt($(this).attr('id')) - 1;
-//});
-
-$('#prev_btn').click(function(){
-	if(currImg > 0){
-		modalImg.src = imageList[currImg - 1];
-		currImg -= 1;
-	}
-});
-
-$('#next_btn').click(function(){
-	if(currImg < imageList.length-1){
-		modalImg.src = imageList[currImg + 1];
-		currImg += 1;
-	}
-});
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
 </body>
 </html>
